@@ -48,7 +48,8 @@
   * `EC2 (for deployment)`
  
   * `Route53 (for routing)`
- 
+ ### AWS Architecture Diagram
+![AWS Architecture Diagram](https://github.com/mannysinghh11/Colorify/blob/master/demos/aws.jpeg "AWS Architecture Diagram")
 
 ### Application and model dependencies
 
@@ -83,5 +84,6 @@ Open any browser and open the following URL to use the application
 `https://towardsdatascience.com/deploying-keras-deep-learning-models-with-flask-5da4181436a2`
 
 `https://www.pyimagesearch.com/2019/02/25/black-and-white-image-colorization-with-opencv-and-deep-learning/`
+
 
 
