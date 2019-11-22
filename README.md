@@ -1,5 +1,9 @@
 # Colorify
 
+### Live Demo
+
+[project.colorify.link](http://project.colorify.link)
+
 ## University Name: [San Jose State University](http://www.sjsu.edu/)
 
 ## Course: [Enterprise Software CMPE-172](http://info.sjsu.edu/web-dbgen/catalog/courses/CMPE172.html)
@@ -21,12 +25,63 @@
 
   `The user is able to store the colored image by downloading`
 
-Sample Demo Screenshots
-Pre-requisites Set Up
-Here include bullet point list of resources one need to configure in their cloud account. (E.g. For AWS: S3 buckets, CloudFront etc)
-List of required software to download locally (E.g. Spring, JDK, Eclipse IDE etc. )
-Local configuration
-How to set up and run project locally?
-Here include quick steps on how to compile and run your project on local machine (whichever you used, Mac or Windows either one).
-You may use below as reference ReadMe.md while you create yours:
-https://github.com/aimeos/aimeos-typo3
+## Sample Demo Screenshots
+
+![Albert Einstein](https://github.com/mannysinghh11/Colorify/blob/master/demos/albert.jpg "Colorized image of Sir Albert Einstein")
+
+![Barack Obama](https://github.com/mannysinghh11/Colorify/blob/master/demos/obama.jpg "Colorized image of Barack Obama")
+
+
+## Pre-requisites Set Up
+
+### AWS
+   * `S3 bucket`
+ 
+   * `Lambda Function`
+ 
+   ![Lambda Function](https://github.com/mannysinghh11/Colorify/blob/master/demos/lambdafunction.jpg "Lambda Function")
+ 
+      make sure to update the 'Bucket' and 'Key' in the params variable to point to your S3 bucket.
+
+      make sure to also update env variable with your aws access and secret keys
+
+  * `EC2 (for deployment)`
+ 
+  * `Route53 (for routing)`
+ 
+
+### Application and model dependencies
+
+  * `Python (use pip to install the libraries listed below`
+
+  * `flask`
+
+  * `numpy`
+
+  * `keras`
+
+  * `Sci-py`
+
+  * `imageio`
+
+  * `scikit-image`
+
+  * `boto3`
+
+After every requirement is installed, run the python file by using the following commands:
+
+`   from app directory` run `python app.py`
+
+Open any browser and open the following URL to use the application
+
+`   http://localhost:80`
+
+### References
+
+`https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0`
+
+`https://towardsdatascience.com/deploying-keras-deep-learning-models-with-flask-5da4181436a2`
+
+`https://www.pyimagesearch.com/2019/02/25/black-and-white-image-colorization-with-opencv-and-deep-learning/`
+
+
